@@ -12,5 +12,19 @@
 </head>
 <body>
   <h1>Opis:</h1>
+  
+    <p>Projektowanie ogrodów to kreatywny proces, który lubię najbardziej. Wsłuchuję się w potrzeby i gust klienta, 
+	wspieram go swoją wiedzą i doświadczeniem. W efekcie powstaje stylowy, szyty na miarę projekt, spełniający oczekiwania inwestora w 100%.</p>
+  <p>Jestem praktykem, dlatego projektuję i realizuję wyłącznie założenia możliwe do wykonania, oraz spełniające swoją funkcję. 
+  Powierzenie mi realizacji projektu ogrodu to pewność, że ogród zostanie wykonany z najwyższej jakości roślin i materiałów, 
+  przy zachowaniu właściwych technologii i estetyki.</p>
+  <p>Aby ogród cieszył oko przez cały rok, trzeba o niego zadbać. Pomagam w tym, świadcząc usługi regularnej pielęgnacji ogrodu, 
+  a także serwisu sezonowego, który wiąże się z konserwacją instalacji nawadniającej i okrywaniem roślin na zimę.</p>
+	
+  <br>
+  <br>
+  <br>
+  <button onclick="goToHomePage()">Powrót do strony głównej</button>
+   <script src="style.js"></script>
 </body>
 </html>
