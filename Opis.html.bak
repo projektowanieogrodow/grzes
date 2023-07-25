@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ogólny opis aplikacji</title>
+    <style>
+	  body {
+      background-color: skyblue;
+      margin: 10;
+      padding: 10;
+    }
+	</style>
+</head>
+<body>
+  <h1>Opis:</h1>
+</body>
+</html>

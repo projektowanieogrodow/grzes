@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Moduły aplikacji</title>
+     <style>
+	  body {
+      background-color: skyblue;
+      margin: 10;
+      padding: 10;
+    }
+	
+	.grid {
+	  display: grid;
+	  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Siatka z elastycznymi kolumnami */
+	  gap: 10px; /* Odstęp między elementami */
+	}
+
+	.grid-item {
+	  width: 100%; /* Obrazy wypełniają całą szerokość swojego kontenera */
+	  height: 200px; /* Wysokość obrazów, możesz dostosować do swoich potrzeb */
+	}
+
+	.grid-item img {
+	  width: 100%;
+	  height: 100%;
+	  object-fit: cover; /* Obrazy zostaną przeskalowane, aby wypełnić całą powierzchnię swojego kontenera */
+	  cursor: pointer; /* Ustawienie kursora na łapkę po najechaniu na obraz */
+	}
+	
+	.grid-item img.enlarged {
+	  position: fixed;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  max-width: 90%;
+	  max-height: 90%;
+	  z-index: 9999;
+	}
+		
+
+	</style>
+</head>
+
+
+<body>
+  <h1>Przykładowe ogrody:</h1>
+
+	<div class="grid">
+	  <div class="grid-item">
+		<img src="Moje ogrody\1.jpg" alt="Obraz 1" onclick="enlargeImage(this)">
+	  </div>
+	  <div class="grid-item">
+		<img src="Moje ogrody\2.jpg" alt="Obraz 2" onclick="enlargeImage(this)">
+	  </div>
+	  <div class="grid-item">
+		<img src="Moje ogrody\3.jpg" alt="Obraz 3" onclick="enlargeImage(this)">
+	  </div>
+	   <div class="grid-item">
+		<img src="Moje ogrody\4.jpg" alt="Obraz 4" onclick="enlargeImage(this)">
+	  </div>
+	  <!-- Dodaj więcej obrazów tutaj -->
+	</div>
+
+  <br>
+  <br>
+  <br>
+  <button onclick="goToHomePage()">Powrót do strony głównej</button>
+   <script src="style.js"></script>
+   
+</body>
+</html>

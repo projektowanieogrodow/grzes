@@ -1,0 +1,106 @@
+    body {
+      background-color: #74a110;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+	  background-image: url("Tapeta/Ogrod.jpg");
+      background-size: cover;
+      background-position: center;
+	  text-align: center;
+    }
+    nav {
+      background-color: #333;
+      padding: 10px;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+    }
+	main {
+	  flex-grow: 1;
+	  display: flex;
+	  padding: 20px;
+	}
+
+	.column {
+	  padding: 20px;
+	  display: flex;
+	  flex-direction: column;
+	  align-items: flex-start;
+	  flex: 1;
+	  margin-right: 10px; /* Przerwa po prawej stronie */
+	  align-items: center; /* Wyśrodkowanie w pionie */
+	}
+
+	.column:last-child {
+	  margin-right: 0; /* Usunięcie przerwy dla ostatniej kolumny */
+	}
+
+    .column img {
+      width: 100%; /* Szerokość 100% */
+      height: auto; /* Automatyczna wysokość */
+      object-fit: cover; /* Dopasowanie obrazu do wymiarów diva */
+    }
+	
+	// zmiana koloru podczas najechania myszą
+	    .nav-item a {
+      transition: color 0.3s ease;
+    }
+    .nav-item:hover a {
+      background-color: blue;
+    }
+	
+	// obramowanie i powiększenie podczas najechania myszą
+	 .column {
+      display: inline-block;
+      position: relative;
+      overflow: hidden;
+    }
+    .column img {
+      transition: transform 0.3s ease;
+    }
+    .column:hover img {
+      transform: scale(1.1);
+      border: 6px solid blue;
+    }
+	
+	/* Styl dla małych ekranów */
+    @media (max-width: 600px) {
+      header {
+        font-size: 24px;
+      }
+
+      nav {
+        font-size: 14px;
+      }
+
+      nav ul li {
+        margin: 0 5px;
+      }
+    }
+
+    /* Styl dla większych ekranów */
+    @media (min-width: 1200px) {
+      header {
+        font-size: 36px;
+      }
+
+      nav {
+        font-size: 18px;
+      }
+    }
